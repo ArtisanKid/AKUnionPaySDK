@@ -30,13 +30,16 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AKUnionPaySDK/Classes/**/*'
-  
+  s.source_files = 'AKUnionPaySDK/Classes/**/*.{h,m}'
+
   # s.resource_bundles = {
   #   'AKUnionPaySDK' => ['AKUnionPaySDK/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'CFNetwork', 'SystemConfiguration'
+  s.libraries = 'c++', 'z'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.vendored_libraries = 'AKUnionPaySDK/Classes/libPaymentControl.a'
 end
