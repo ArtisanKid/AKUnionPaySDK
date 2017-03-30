@@ -31,6 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'AKUnionPaySDK/Classes/**/*.{h,m}'
+  s.preserve_paths = 'AKWeiboSDK/Classes/*.{txt,md,doc,docx,pdf}'
 
   # s.resource_bundles = {
   #   'AKUnionPaySDK' => ['AKUnionPaySDK/Assets/*.png']
@@ -38,7 +39,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'CFNetwork', 'SystemConfiguration'
-  s.libraries = 'c++', 'z'
+  s.libraries = 'z'
   # s.dependency 'AFNetworking', '~> 2.3'
 
   s.vendored_libraries = 'AKUnionPaySDK/Classes/libPaymentControl.a'

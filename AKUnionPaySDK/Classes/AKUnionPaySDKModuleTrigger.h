@@ -16,6 +16,8 @@
  当前的解决方法是使用自定义的Pod包裹静态库(.a)或者未使用module的framework，添加ModuleTrigger文件，使cocoaPod主动生成module文件
  */
 
+//在Xcode7.0之后的版本中进行开发，需要在工程对应的plist文件中，添加LSApplicationQueriesSchemes->Array并加入uppaysdk、uppaywallet、uppayx1、uppayx2、uppayx3五个item
+
 #import <Foundation/Foundation.h>
 
 @interface AKUnionPaySDKModuleTrigger : NSObject
